@@ -2,6 +2,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const prefix = "-";
 const fs = require("fs");
+const moment = require("moment");
 const welcome = JSON.parse(fs.readFileSync('./welcomer.json' , 'utf8'));
  
 client.on('message', message => {
